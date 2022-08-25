@@ -1,6 +1,6 @@
 Devices:
   hostname:
-    type: eos
-    address: 172.29.151.7
-    username: lab
-    password: Nebula2021
+    type: ios-xe
+    address: 172.16.12.7
+    username: username
+    password: password

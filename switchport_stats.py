@@ -1,7 +1,7 @@
 import csv
 
 import yaml
-from scrapli.driver.core import EOSDriver
+from scrapli.driver.core import IOSXEDriver
 
 def loadDevices():
     """ Load device inventory from config.yml """
@@ -17,7 +17,7 @@ def connect_to_device(deviceconfig):
     device['auth_username'] = deviceconfig['username']
     device['auth_password'] = deviceconfig['password']
     device['auth_strict_key'] = False
-    conn = EOSDriver(**device)
+    conn = IOSXEDriver(**device)
     conn.open()
     return conn
 

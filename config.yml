@@ -1,0 +1,6 @@
+Devices:
+  hostname:
+    type: eos
+    address: 172.29.151.7
+    username: lab
+    password: Nebula2021
